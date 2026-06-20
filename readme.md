@@ -1,9 +1,26 @@
 # Code Usage Guide(EN)
 
 
+## News
+
+**2026-05-22**: This paper has been accepted by **Communications Physics-Nature**.
+
+arxiv preprint link: https://arxiv.org/abs/2605.25679
+
+
+## Overview
+
+This repository provides the **full codebase** and **demo datasets** used in the paper:
+
+**“Transformer-based Neural Operators for 3D Wind Field Prediction over Complex Mountainous Terrain”**
+
+
+## Abstract
+Accurate prediction of three-dimensional wind fields over complex mountainous terrain is essential for renewable energy deployment and regional weather modeling. Existing computational fluid dynamics simulations are accurate but slow and require laborious mesh generation, while many deep learning methods struggle to capture sharp local wind variations induced by complex terrain. Here, we present a transformer-based dual-attention neural-operator framework for rapid wind-field prediction over complex mountainous terrain. Trained on a large simulation dataset spanning diverse terrain geometries and inflow conditions, the framework enables rapid prediction of steady-state wind field while maintaining competitive accuracy. It transfers robustly to real-world mountainous sites, reducing relative error by about 10\% compared with existing neural-operator baselines. With sparse observations covering only 1\% of the domain, prediction error is further reduced by 16.89\% relative to the model without observations and by 32.75\% relative to advanced baselines on unseen terrains. This framework provides a practical tool for wind-resource assessment over complex mountainous terrain and atmosphere–surface interaction studies.
+
 ## Dataset
 
-The demo dataset can be downloaded from：linke: https://huggingface.co/datasets/yujiaA/Demo-dataset-of-complex-mountainous-terrain 
+The demo dataset can be downloaded from：link: https://huggingface.co/datasets/yujiaA/Demo-dataset-of-complex-mountainous-terrain 
 
 You can directly replace the folders 'all_dataset_1' and 'all_dataset_zero_shot' with the download folders
 
@@ -52,11 +69,9 @@ Taken Patchsolver as example:
 
 1. you should switch to the Patchsolver directory:
 
-'''bash
-
+```bash
 cd Patchsolver
-
-'''
+```
 
 2. create a new environment for python 3.10:
 
@@ -85,9 +100,7 @@ pip install scipy matplotlib pyyaml einops timm vtk xdem scikit-learn
 
 
 ```bash
-
 bash patchsolver.sh
-
 ```
 
 
